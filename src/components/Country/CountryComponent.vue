@@ -105,7 +105,7 @@ export default {
     this.checked = {}
     this.checked = this.getCountryData()
     axios
-        .get('http://localhost:8082/harita/country/country/' + this.id)
+        .get('https://harita-backend.herokuapp.com/harita/country/country/' + this.id)
         .then((response) => {
           this.countryInfo = response.data
           console.log(response)
