@@ -1,6 +1,5 @@
 <template>
   <div className="worldmap">
-    <span id="title">Harita</span>
 
     <vue-world-map
         id="worldmap"
@@ -14,7 +13,6 @@
     >
     </vue-world-map>
 
-    <span id="signature"><b>Datatracker</b>, <i>aaaaaaaaaa</i></span>
   </div>
 </template>
 
@@ -31,9 +29,12 @@ export default {
     handleStateHover: function (e) {
       if (e.target.tagName === 'path') {
         console.log(e.target.id);
-        router.push( {name: 'country', params: { 'id': e.target.id }})
+        router.replace( {name: 'country', params: { 'id': e.target.id }})
       }
     }
+  },
+  mounted() {
+    this.countryData = {}
   },
   data() {
     return {

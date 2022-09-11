@@ -24,10 +24,10 @@ export default {
 
 <style>
 body {
-  color: wheat;
+  color: white;
   padding: 12px;
   margin: 12px;
-  background-color: #0A0F39;
+  background-color: #6D6D6D;
 }
 
 #mySelect {

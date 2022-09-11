@@ -25,11 +25,11 @@ export default {
   props: {
     lowColor: {
       type: String,
-      default: '#fde2e2',
+      default: '#ffffff',
     },
     highColor: {
       type: String,
-      default: '#d83737',
+      default: '#ff0000',
     },
     countryData: {
       type: Object,
@@ -45,7 +45,7 @@ export default {
     },
     hoverFillColor: {
       type: String,
-      default: 'black'
+      default: '#dadada'
     }
   },
   data() {
@@ -71,10 +71,6 @@ export default {
 <style>
 .vue-world-map {
   height: 100%;
-}
-
-path:hover{
-  fill: ;
 }
 
 #map-svg {
